@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Simple Calculator</title><link rel="stylesheet" href="style.css"></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Himani | Portfolio</title><link rel="stylesheet" href="style.css"></head>
 <body>
-  <main class="calculator">
-    <h1>Simple Calculator</h1>
-    <p class="subtitle">A clean calculator for everyday maths</p>
-    <input id="display" class="display" type="text" value="0" aria-label="Calculator display" readonly>
-    <div class="keys">
-      <button class="utility" data-action="clear">AC</button><button class="utility" data-action="delete">DEL</button><button class="operator" data-value="/">÷</button><button class="operator" data-value="*">×</button>
-      <button data-value="7">7</button><button data-value="8">8</button><button data-value="9">9</button><button class="operator" data-value="-">−</button>
-      <button data-value="4">4</button><button data-value="5">5</button><button data-value="6">6</button><button class="operator" data-value="+">+</button>
-      <button data-value="1">1</button><button data-value="2">2</button><button data-value="3">3</button><button class="equals" data-action="equals">=</button>
-      <button class="zero" data-value="0">0</button><button data-value=".">.</button>
-    </div>
-    <p id="message" aria-live="polite"></p>
-  </main><script src="script.js"></script>
+  <nav><a class="brand" href="#home">Himani.</a><button id="menuButton" aria-label="Toggle navigation">☰</button><div id="navLinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+  <header id="home" class="hero"><div class="hero-copy"><p class="eyebrow">MCA STUDENT • ASPIRING DEVELOPER</p><h1>Hello, I'm <span>Himani</span></h1><p>I am an MCA student who enjoys learning about technology and creating simple, user-friendly web pages.</p><a class="button" href="#projects">Explore My Work</a></div><div class="hero-art" aria-hidden="true"><div class="circle">H</div><span class="spark s1">✦</span><span class="spark s2">✧</span></div></header>
+  <main>
+    <section id="about"><p class="eyebrow">GET TO KNOW ME</p><h2>About Me</h2><p>I am pursuing a Master of Computer Applications (MCA). I am building my technical foundation step by step and interested in frontend development, problem solving, and learning new tools.</p></section>
+    <section id="skills"><p class="eyebrow">WHAT I'M LEARNING</p><h2>Skills</h2><div class="skill-list"><span>HTML</span><span>CSS</span><span>Python</span><span>C / C++ basics</span><span>DBMS concepts</span><span>Computer Networks</span></div><p class="note">Edit this list to match your current skills accurately.</p></section>
+    <section id="projects"><p class="eyebrow">SOME PRACTICE WORK</p><h2>Projects</h2><div class="project-grid"><article><div class="project-icon">▦</div><h3>Image Gallery</h3><p>A responsive gallery with category filters and a lightbox image viewer.</p><a href="../Image-Gallery/index.html">View project ↗</a></article><article><div class="project-icon">＋</div><h3>Simple Calculator</h3><p>A calculator that supports addition, subtraction, multiplication and division.</p><a href="../Calculator/index.html">View project ↗</a></article><article><div class="project-icon">◎</div><h3>Personal Portfolio</h3><p>A responsive personal site to introduce myself and display practice projects.</p><a href="#home">You're here ↗</a></article></div></section>
+    <section id="contact"><p class="eyebrow">LET'S CONNECT</p><h2>Contact</h2><p>For academic or project-related communication, you can reach me by email.</p><a class="button" href="mailto:your-email@example.com">Email Me</a><p class="note">Before publishing, replace the example email with your own email address.</p></section>
+  </main>
+  <footer>© <span id="year"></span> Himani • Built with HTML, CSS and JavaScript</footer><script src="script.js"></script>
 </body></html>
